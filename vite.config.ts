@@ -5,6 +5,8 @@ import sourceIdentifierPlugin from 'vite-plugin-source-info'
 
 const isProd = process.env.BUILD_MODE === 'prod'
 export default defineConfig({
+  // Set base path for GitHub Pages
+  base: '/lottery-app/',
   plugins: [
     react(), 
     sourceIdentifierPlugin({
